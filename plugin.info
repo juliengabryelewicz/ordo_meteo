@@ -1,0 +1,6 @@
+[Plugin]
+Id = ordo_meteo
+Name = Météo
+Version = 1.0.0
+Description = Donne la météo d'une ville
+Required = mapview

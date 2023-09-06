@@ -1,0 +1,50 @@
+<MeteoScreen>: 
+	id: meteo_screen
+	name: 'MeteoScreen'
+	mapview: mapview
+	icon_meteo:icon_meteo
+	GridLayout:
+		cols:1
+		GridLayout:
+			cols:2
+			GridLayout:
+				cols:1
+				rows:1
+				row_force_default:True
+				row_default_height:140
+				Label:
+					name: 'city_meteo'
+					id: city_meteo
+					text: meteo_screen.city_meteo
+					font_size: '60sp'
+			GridLayout:
+				cols:1
+				rows:2
+				row_force_default:True
+				row_default_height:70
+				Label:
+					name: 'min_temperature'
+					id: min_temperature
+					text: meteo_screen.min_temperature
+					font_size: '40sp'
+				Label:
+					name: 'max_temperature'
+					id: max_temperature
+					text: meteo_screen.max_temperature
+					font_size: '40sp'
+		GridLayout:
+			cols:2
+			row_force_default:True
+			row_default_height:140
+			GridLayout:
+				cols:1
+				id:icon_meteo	
+			Label:
+				name: 'description'
+				id: description
+				text: meteo_screen.description
+				font_size: '40sp'
+		GridLayout:
+			cols:1
+			name: 'mapview'
+			id: mapview
